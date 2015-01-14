@@ -1,0 +1,43 @@
+bnd-release	=	https://bndtools.ci.cloudbees.com/job/bnd.master/lastSuccessfulBuild/artifact/dist/bundles
+
+-pluginpath:\
+        ${build}/cache/biz.aQute.repository.jar;url=${bnd-release}/biz.aQute.repository/biz.aQute.repository-latest.jar, \
+        ${build}/cache/biz.aQute.repository.aether.jar;url=${bnd-release}/biz.aQute.repository.aether/biz.aQute.repository.aether-latest.jar
+
+
+-plugin.enroute.wrapper: aQute.bnd.deployer.repository.wrapper.Plugin; \
+            location            =	"${build}/cache/wrapper"; \
+            reindex				=	true; \
+            augments			=   WORKSPACE
+
+-plugin.localrepo= \
+	aQute.bnd.deployer.repository.LocalIndexedRepo; \
+		name=Local; \
+		local=${build}/local;\
+		pretty=true
+
+-plugin.centralrepo = \
+	aQute.bnd.jpm.Repository; \
+	        includeStage		=       true; \
+	        name				=       Central; \
+	        location			=       ~/.bnd/shacache; \
+	        index				=       ${build}/repository.json; \
+	        depository.group	=		OSGi; \
+    		depository.name		=		enRoute.rt
+
+-plugin.releaserepo = \
+	aQute.bnd.deployer.repository.LocalIndexedRepo; \
+		name=Release; \
+		local=${build}/release;\
+		pretty=true
+
+-plugin.liferaynexus = \
+	aQute.bnd.deployer.repository.aether.AetherRepository; \
+		name 	= 	Liferay Nexus; \
+		url 	= 	http://repository.liferay.com/nexus/content/groups/public/
+
+-plugin.jbossreporeleases = \
+	aQute.bnd.deployer.repository.aether.AetherRepository; \
+		name 	= 	JBoss Releases; \
+		url 	= 	https://repository.jboss.org/nexus/content/repositories/releases/
+

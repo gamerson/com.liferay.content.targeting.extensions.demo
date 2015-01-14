@@ -1,0 +1,17 @@
+-buildpath: \
+	${buildpath-rule-test}
+
+-testpath: \
+	${buildpath-rule-test}
+
+-runrequires: osgi.identity;filter:='(osgi.identity=rule.weather)'
+
+Bundle-Description: \
+ 	This bundle is an OSGi test bundle that tests the Weather rule
+
+Bundle-Version:1.0.0.${tstamp}
+
+Private-Package: com.liferay.content.targeting.rule.weather.test
+
+
+Test-Cases: ${test-cases}

@@ -1,0 +1,25 @@
+-buildpath: \
+	${buildpath-rule}
+
+-includeresource: \
+	${includeresource-rule}
+
+-runrequires:  \
+	osgi.identity;filter:='(osgi.identity=com.liferay.content.targeting.rule.weather)'
+
+Bundle-Description: \
+	A rule that evaluates the weather in a user's particular location
+
+Bundle-Name: Content Targeting Weather Rule
+
+Bundle-Version:	1.0.0.${tstamp}
+
+Import-Package: \
+	${imports-rule},\
+	com.liferay.ip.geocoder;version=1.0.0,\
+	*;resolution:=optional
+
+Private-Package:  \
+	com.liferay.content.targeting.rule.weather
+
+Web-ContextPath: /
