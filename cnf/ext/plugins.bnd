@@ -41,3 +41,7 @@ bnd-release	=	https://bndtools.ci.cloudbees.com/job/bnd.master/lastSuccessfulBui
 		name 	= 	JBoss Releases; \
 		url 	= 	https://repository.jboss.org/nexus/content/repositories/releases/
 
+-plugin.arquilliansnapshots = \
+	aQute.bnd.deployer.repository.aether.AetherRepository; \
+		name 	= 	Arquillian Snapshots; \
+		url 	= 	http://repository-arquillian.forge.cloudbees.com/snapshot/com/liferay/arquillian/arquillian-extension-liferay
