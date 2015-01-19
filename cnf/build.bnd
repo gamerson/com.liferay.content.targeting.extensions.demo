@@ -110,7 +110,7 @@ imports-rule: \
 	javax.servlet.*;version='[2.4,4.0)'
 
 includeresource-rule: \
-	WEB-INF/liferay-hook.xml=META-INF/liferay-hook.xml,\
+	META-INF/liferay-hook.xml=META-INF/liferay-hook.xml,\
 	content=src/content,\
 	templates=src/templates,\
 	@util-java-6.2.1.jar

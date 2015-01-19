@@ -1,0 +1,10 @@
+-buildpath: ${buildpath-rule}
+-runrequires: osgi.identity;filter:='(osgi.identity=rule.language)'
+Bundle-Description: RuleLanguage
+Bundle-Version: 1.0.0.${tstamp}
+Export-Package: rule.language
+Import-Package: \
+	${imports-rule},\
+	*;resolution:=optional
+Include-Resource: ${includeresource-rule}
+Web-ContextPath: /rule.language
