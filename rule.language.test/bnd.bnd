@@ -1,4 +1,5 @@
--buildpath: ${buildpath-rule-test}
+-buildpath: \
+	${buildpath-rule-test}
 Bundle-Description: RuleLanguageTest
 Bundle-Version: 1.0.0.${tstamp}
 Export-Package: rule.language.test

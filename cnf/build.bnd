@@ -75,7 +75,7 @@ buildpath-rule-test: \
 	org.jboss.osgi.vfs:jbosgi-vfs30;version=2.0.0.Final;strategy=exact,\
 	org.jboss.osgi.metadata:jbosgi-metadata;version=4.0.0.CR1;strategy=exact,\
 	org.jboss.logging:jboss-logging;version=3.1.3.GA;strategy=exact,\
-	shrinkwrap-osgi,\
+	org.jboss.shrinkwrap.osgi:shrinkwrap-osgi;version=1.0.0.SNAPSHOT,\
 	osgi.enterprise,\
 	biz.aQute.bndlib,\
 	org.jboss__jboss-vfs,\
