@@ -31,15 +31,10 @@ bnd-release	=	https://bndtools.ci.cloudbees.com/job/bnd.master/lastSuccessfulBui
 		local=${build}/release;\
 		pretty=true
 
--plugin.localsnapshots = \
+-plugin.liferaynexus = \
 	aQute.bnd.deployer.repository.aether.AetherRepository; \
-		name 	= 	Local Snapshots; \
-		url 	= 	http://localhost:8081/nexus/content/repositories/snapshots/
-
-#-plugin.liferaynexus = \
-#	aQute.bnd.deployer.repository.aether.AetherRepository; \
-#		name 	= 	Liferay Nexus; \
-#		url 	= 	http://repository.liferay.com/nexus/content/groups/public/
+		name 	= 	Liferay Nexus; \
+		url 	= 	http://repository.liferay.com/nexus/content/groups/public/
 
 -plugin.jbossreporeleases = \
 	aQute.bnd.deployer.repository.aether.AetherRepository; \
@@ -49,4 +44,4 @@ bnd-release	=	https://bndtools.ci.cloudbees.com/job/bnd.master/lastSuccessfulBui
 -plugin.arquilliansnapshots = \
 	aQute.bnd.deployer.repository.aether.AetherRepository; \
 		name 	= 	Arquillian Snapshots; \
-		url 	= 	http://repository-arquillian.forge.cloudbees.com/snapshot/com/liferay/arquillian/arquillian-extension-liferay
+		url 	= 	http://repository-arquillian.forge.cloudbees.com/snapshot/

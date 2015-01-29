@@ -47,8 +47,8 @@ buildpath-rule-test: \
 	org.jboss.shrinkwrap.resolver__shrinkwrap-resolver-api-maven-archive,\
 	org.jboss.shrinkwrap.resolver__shrinkwrap-resolver-impl-maven-archive,\
 	org.jboss.shrinkwrap.resolver__shrinkwrap-resolver-spi-maven-archive,\
-	com.liferay.arquillian:arquillian-container-liferay;version=1.0.0.SNAPSHOT,\
-	com.liferay.arquillian:arquillian-deployment-generator-bnd;version=1.0.0.SNAPSHOT,\
+	com.liferay.arquillian:arquillian-container-liferay;version=1.0.0.Alpha1-SNAPSHOT,\
+	com.liferay.arquillian:arquillian-deployment-generator-bnd;version=1.0.0.Alpha1-SNAPSHOT,\
 	com.liferay.portal:portal-service;version=6.2.1;strategy=exact,\
 	osgi.enroute.base.api;version=1.0,\
 	biz.aQute.junit,\
